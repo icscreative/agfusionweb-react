@@ -15,7 +15,7 @@ export default class DataForm extends React.Component {
     this.state = {
       query: new ProcessQuery(),
       loading: false,
-      species: 'homo_sapiens_hg38'
+      species: 'homo_sapiens_hg19'
     }
   }
 
@@ -23,11 +23,11 @@ export default class DataForm extends React.Component {
     this.formRef.current.setFields([
       {
         name: "species",
-        value: 'homo_sapiens_hg38',
+        value: 'homo_sapiens_hg19',
       },
       {
         name: 'release',
-        value: 94
+        value: 75
       }
     ]);
   }
@@ -179,11 +179,11 @@ export default class DataForm extends React.Component {
     this.formRef.current.setFields([
       {
         name: "species",
-        value: 'homo_sapiens_hg38',
+        value: 'homo_sapiens_hg19',
       },
       {
         name: 'release',
-        value: 94
+        value: 75
       }
     ]);
     this.props.onClearCallback();
@@ -196,8 +196,8 @@ export default class DataForm extends React.Component {
       gene1_breakpoint: 121487991,
       gene2: 'CCDC6',
       gene2_breakpoint: 59807078,
-      species: 'homo_sapiens_hg38',
-      release: 94
+      species: 'homo_sapiens_hg19',
+      release: 75
     }
 
     this.formRef.current.setFields([
